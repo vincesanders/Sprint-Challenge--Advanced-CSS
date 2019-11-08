@@ -1,1 +1,27 @@
 // Navigation code here
+.nav-container {
+    .displayFlex(center, column);
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    .logo {
+        width: @container-width;
+        margin: 0 auto;
+        padding-top: 1%;
+        text-align: center;
+        font-size: 4rem;
+    }
+    nav {
+        width: 28%;
+        margin: 0 auto;
+        .displayFlex(space-evenly);
+        padding: 1% 0;
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: @nav-font;
+            text-align: center;
+            width: 20%;
+        }
+    }
+}

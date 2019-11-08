@@ -1,1 +1,11 @@
 // Mixins Here
+.displayFlex(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+
+.displayFlex(@justify, @direction) {
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+}

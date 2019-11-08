@@ -160,6 +160,35 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+}
+.nav-container .logo {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 1%;
+  text-align: center;
+  font-size: 4rem;
+}
+.nav-container nav {
+  width: 28%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1% 0;
+}
+.nav-container nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #454A59;
+  text-align: center;
+  width: 20%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
