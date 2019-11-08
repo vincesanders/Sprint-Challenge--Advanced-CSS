@@ -279,7 +279,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text #btn {
   width: 30%;
   background: #22283A;
   color: white;
@@ -290,7 +290,7 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text #btn:hover {
   color: #22283A;
   background: #F6F6F6;
   font-weight: bold;
@@ -313,7 +313,7 @@ footer {
   .home .walk .walk-text {
     width: 100%;
   }
-  .home .walk .walk-text .btn {
+  .home .walk .walk-text #btn {
     width: 100%;
     padding: 4%;
   }
@@ -324,7 +324,7 @@ footer {
   }
 }
 .home .contact-section {
-  display: flex;
+  display: none;
   justify-content: center;
   padding: 0 60px;
   margin-bottom: 2%;
