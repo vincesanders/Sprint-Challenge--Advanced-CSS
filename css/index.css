@@ -170,6 +170,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
+  opacity: 0.8;
 }
 .nav-container .logo {
   width: 800px;
@@ -177,6 +178,7 @@ p {
   padding-top: 1%;
   text-align: center;
   font-size: 4rem;
+  opacity: 1;
 }
 .nav-container nav {
   width: 28%;
@@ -188,10 +190,13 @@ p {
 .nav-container nav a {
   text-decoration: none;
   font-size: 1.6rem;
-  font-weight: bold;
   color: #454A59;
   text-align: center;
   width: 20%;
+}
+.nav-container nav a:hover {
+  opacity: 1;
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   .nav-container .logo {
@@ -217,6 +222,11 @@ footer {
   width: 100%;
   border-radius: 5px;
   margin-top: 13%;
+}
+@media (max-width: 500px) {
+  .home .intro .banner {
+    margin-top: 18%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
