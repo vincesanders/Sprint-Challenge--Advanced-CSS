@@ -293,6 +293,7 @@ footer {
   .home .walk {
     flex-wrap: wrap-reverse;
     padding: 4% 15px;
+    margin-top: 4%;
   }
   .home .walk .walk-text {
     width: 100%;
