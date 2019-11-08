@@ -189,6 +189,16 @@ p {
   text-align: center;
   width: 20%;
 }
+@media (max-width: 500px) {
+  .nav-container .logo {
+    width: 100%;
+    padding-top: 2%;
+  }
+  .nav-container nav {
+    width: 85%;
+    padding: 2% 0;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -201,7 +211,7 @@ footer {
 }
 .home .intro .banner {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
