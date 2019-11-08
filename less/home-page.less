@@ -111,4 +111,48 @@
       }
     }
   }//Ends .walk
+  .contact-section {
+    .displayFlex(center);
+    padding: 0 60px;
+    margin-bottom: 2%;
+    .contact-container {
+      margin: 0 auto;
+      border-radius: 5px;
+      box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      background: @ebony-clay;
+      .contact {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        * {
+          margin: 10px 0;
+          color: @ebony-clay;
+        }
+        input {
+          .input-box();
+        }
+        textarea {
+          .input-box();
+        }
+        h2 {
+          color: @wild-sand;
+        }
+        h3 {
+          font-size: 1.8rem;
+          color: @wild-sand;
+        }
+        button {
+          .createButton(30%, @wild-sand, @btn-bg-color);
+          border-color: @wild-sand;
+          &:hover {
+            color: @wild-sand;
+            background: @btn-bg-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
 }// home
