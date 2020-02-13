@@ -1,1 +1,47 @@
 // Navigation code here
+.nav-container {
+    .displayFlex(center, column);
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    .logo {
+        width: @container-width;
+        .center();
+        padding-top: 1%;
+        text-align: center;
+        font-size: 4rem;
+        opacity: 1;
+    }
+    nav {
+        width: 28%;
+        .center();
+        .displayFlex(space-evenly);
+        padding: 1% 0;
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            // font-weight: bold;
+            color: @nav-font;
+            text-align: center;
+            width: 20%;
+            &:hover {
+                opacity: 1;
+                font-weight: bold;
+            }
+        }
+    }//Ends nav
+    @media @phone {
+        .logo {
+            width: 100%;
+            padding-top: 2%;
+        }
+        nav {
+            width: 85%;
+            padding: 2% 0;
+        }
+    }//Ends @phone media querie
+}//Ends .nav-container

@@ -1,1 +1,34 @@
 // Mixins Here
+.displayFlex(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+
+.displayFlex(@justify, @direction) {
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+}
+
+.center() {
+    margin: 0 auto;
+}
+
+.input-box() {
+    font-size: 1.6rem;
+	background-color: rgba(240,240,240,0.2);
+	color: white;
+	border: 1px solid rgba(240,240,240,0.5);
+}
+
+.createButton(@width, @bg-color, @font-color) {
+    width: @width;
+    background: @bg-color;
+    color: @font-color;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2%;
+    border: 2px solid @bg-color;
+    border-radius: 5px;
+    cursor: pointer;
+}

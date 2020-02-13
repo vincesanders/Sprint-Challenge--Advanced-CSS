@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive design will use media querie breakpoints to make a site more friendly to various screen sizes. However, it still makes use of absolute units, like px for sizing. A fully responsive site will make much greater use of relative units, like rem or %.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+It depends on what order you design your site. You can do your initial markup and styling based on a desktop-sized screen and then set media queries with a max-width. That's desktop first. If you do the opposite and do the initial styling and markup for a mobile-sized screen and set media queries with a min-width, then you're doing mobile first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the root font-size to 62.5% of the browser's font setting (usually 16px). Now we can size our fonts relative to that value in the rest of our document using rem. This makes our site more accessible to poeple who have bad vision and set their font settings larger in their browser.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows us to write our styling in a more intuitive and powerful way. After we write our styling in a .less document we can then compile it. All the compiler does is convert our styling into normal css that a browser can easily understand.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite part of preprocessing is breaking our css into multiple .less files. Compartmentalizing our styling makes it much easier to manage. I also like being able to make mixins and variables for code that is used throughout a site so we don't have to write the same code multiple times.
+
+The thing that gives me the most trouble is knowing the limits of escaping and the differences between css and LESS syntax. There are some things you can get away with in normal css, but the LESS compiler doesn't like it. My guess is that I will learn these differences as I use it.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

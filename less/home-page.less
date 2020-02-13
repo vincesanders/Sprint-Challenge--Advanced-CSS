@@ -4,6 +4,15 @@
 
   .intro {
 
+    .banner {
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 13%;
+      @media @phone {
+        margin-top: 18%;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -25,6 +34,14 @@
       border-radius: 20px;
       height: 100%;
     }
+    @media @phone {
+      img:nth-child(1) {
+        width: 100%;
+      }
+      img:nth-child(2), img:nth-child(3) {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
@@ -43,8 +60,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .displayFlex(center);
 
     .walk-text {
       width: 50%;
@@ -57,7 +73,13 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      #btn {
+        .createButton(30%, @btn-bg-color, white);
+        &:hover {
+          color: @btn-bg-color;
+          background: @wild-sand;
+          font-weight: bold;
+        }
       }
     }
 
@@ -69,6 +91,68 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+    @media @phone {
+      flex-wrap: wrap-reverse;
+      padding: 4% 15px;
+      margin-top: 4%;
+      .walk-text {
+        width: 100%;
+        #btn {
+          width: 100%;
+          padding: 4%;
+        }
+      }
+      .walk-img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 4%;
+      }
+    }
+  }//Ends .walk
+  .contact-section {
+    display: none;
+    justify-content: center;
+    padding: 0 60px;
+    margin-bottom: 2%;
+    .contact-container {
+      margin: 0 auto;
+      border-radius: 5px;
+      box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      background: @ebony-clay;
+      .contact {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        * {
+          margin: 10px 0;
+          color: @ebony-clay;
+        }
+        input {
+          .input-box();
+        }
+        textarea {
+          .input-box();
+        }
+        h2 {
+          color: @wild-sand;
+        }
+        h3 {
+          font-size: 1.8rem;
+          color: @wild-sand;
+        }
+        button {
+          .createButton(30%, @wild-sand, @btn-bg-color);
+          border-color: @wild-sand;
+          &:hover {
+            color: @wild-sand;
+            background: @btn-bg-color;
+            font-weight: bold;
+          }
+        }
       }
     }
   }
